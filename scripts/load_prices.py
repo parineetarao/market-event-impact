@@ -34,7 +34,16 @@ SERIES = [
     ("NASDAQ", "^IXIC", "Nasdaq Composite", "US", "benchmark", None, "yfinance"),
     ("NVDA", "NVDA", "Nvidia", "US", "stock", None, "yfinance"),
     ("BRENT", "DCOILBRENTEU", "Brent crude spot (FRED)", "GLOBAL", "indicator", None, "FRED"),
-]
+    ("SEMIS_ETF", "SMH", "VanEck Semiconductor ETF", "US", "sector_index", "Semiconductors", "yfinance"),
+    ("TECH_ETF", "XLK", "Technology Select Sector SPDR", "US", "sector_index", "Technology", "yfinance"),
+    ("ENERGY_ETF", "XLE", "Energy Select Sector SPDR", "US", "sector_index", "Energy", "yfinance"),
+    ("FIN_ETF", "XLF", "Financial Select Sector SPDR", "US", "sector_index", "Financials", "yfinance"),
+    ("MSFT", "MSFT", "Microsoft", "US", "stock", None, "yfinance"),
+    ("GOOGL", "GOOGL", "Alphabet", "US", "stock", None, "yfinance"),
+    ("AMZN", "AMZN", "Amazon", "US", "stock", None, "yfinance"),
+    ("META", "META", "Meta Platforms", "US", "stock", None, "yfinance"),
+    ("AMD", "AMD", "Advanced Micro Devices", "US", "stock", None, "yfinance")
+    ]
 
 
 def read_series(name):

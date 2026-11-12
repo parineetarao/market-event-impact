@@ -20,6 +20,15 @@ TICKERS = {
     "SP500": "^GSPC",
     "NASDAQ": "^IXIC",
     "NVDA": "NVDA",
+    "SEMIS_ETF": "SMH",
+    "TECH_ETF": "XLK",
+    "ENERGY_ETF": "XLE",
+    "FIN_ETF": "XLF",
+    "MSFT": "MSFT",
+    "GOOGL": "GOOGL",
+    "AMZN": "AMZN",
+    "META": "META",
+    "AMD": "AMD",
 }
 
 for name, sym in TICKERS.items():
