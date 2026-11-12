@@ -30,6 +30,7 @@ SERIES = [
     ("INDIAVIX", "^INDIAVIX", "India VIX", "IN", "indicator", None, "yfinance"),
     ("USDINR", "USDINR=X", "USD/INR", "GLOBAL", "indicator", None, "yfinance"),
     ("SP500", "^GSPC", "S&P 500", "US", "benchmark", None, "yfinance"),
+    ("BRENT_FUT", "BZ=F", "Brent crude futures (front-month, Yahoo)", "GLOBAL", "indicator", None, "yfinance"),
     ("NASDAQ", "^IXIC", "Nasdaq Composite", "US", "benchmark", None, "yfinance"),
     ("NVDA", "NVDA", "Nvidia", "US", "stock", None, "yfinance"),
     ("BRENT", "DCOILBRENTEU", "Brent crude spot (FRED)", "GLOBAL", "indicator", None, "FRED"),
