@@ -45,3 +45,13 @@ An event is counted only after I have opened its source and confirmed the date a
 - Length of the estimation window and how to handle estimation days that fall inside other events.
 - Event windows to report (for example 0 to +5 days).
 - Whether post-2026 events need a separate regime treatment.
+## Phase 3: event-study settings (written before results)
+
+- Benchmarks: Nifty 50 for India instruments, S&P 500 for US instruments.
+- Returns: log returns on adjusted close, only between consecutive benchmark trading days where both series have a price.
+- Estimation window: 120 trading days, ending 11 trading days before day 0 (days -130 to -11).
+- Estimation days within 5 trading days after another event's day 0 are excluded. A model needs at least 60 usable days or it is skipped.
+- Event windows reported: day 0 only, days -1 to +1, days 0 to +5. Days 0 to +5 is the primary window.
+- An event is "measured" only when its primary window has closed in both markets. Until then it is "pending".
+- t-stat = CAR / (residual std x sqrt(days)). Approximate: it ignores estimation error and assumes independent days.
+- Known limit: later spike days inside an oil episode are not excluded from other events' estimation windows.
